@@ -47,10 +47,10 @@ body {
 }
 
     .autorization input {
-    font: normal 11px/20px 'Lucida Sans Unicode';
-    color: #97a2a6;
-    padding-left: 5px;
-    width: 112px;
+        font: normal 11px/20px 'Lucida Sans Unicode';
+        color: #97a2a6;
+        padding-left: 5px;
+        width: 112px;
     }
 
 .autorization_button {
@@ -68,15 +68,18 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
-.autorization .vxod{
+
+.autorization .vxod {
     border-right: 1px solid #ffffff;
     padding: 0 5px 0 2px;
 }
-.autorization .zabylparol{
-    color:#bfbfbf;
+
+.autorization .zabylparol {
+    color: #bfbfbf;
     padding-left: 15px;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 .link_bar {
     display: block;
     float: right;
@@ -84,15 +87,14 @@ body {
     border-radius: 20px;
     padding: 5px;
     color: #696969;
-    
 }
 
-.link_bar a{
-    padding: 0 5px;
-    display: block;
-    float: left;
-    color: grey;
-}
+    .link_bar a {
+        padding: 0 5px;
+        display: block;
+        float: left;
+        color: grey;
+    }
 
 .banner {
     background: url('../img/banner.png') no-repeat;
@@ -100,10 +102,68 @@ body {
     height: 237px;
     clear: both;
 }
-.top_header{
-    margin-bottom:20px;
+
+.top_header {
+    margin-bottom: 20px;
 }
-    
+
+header nav {
+    background: #0b0d0e;
+    border-top: 3px solid #505860;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 3px 3px 10px #696969;
+}
+
+    header nav ul {
+    }
+
+    header nav li {
+        float: left;
+    }
+
+        header nav li a {
+            text-decoration: none;
+            font: normal 14px/30px 'Lucida Sans Unicode';
+            color: #b1bcc0;
+            padding: 0 15px;
+        }
+
+    header nav > a, header nav > p {
+        display: block;
+        font: normal 11px/30px Arial;
+        float: right;
+        padding: 0 3px;
+        color: #929b9f;
+    }
+    header nav > p{
+        color: #8a9296;
+    }
+.kolich_tovarov:after, .tovarov_na_summu:after {
+    display: block;
+    font: normal 12px/30px Arial;
+    float: right;
+    color: #0d5a8f;
+}
+
+.kolich_tovarov:after {
+    content: '0';
+    padding: 0 3px;
+}
+
+.tovarov_na_summu:after {
+    content: '0,00 грн.';
+    padding: 0 15px 0 10px;
+}
+
+.fa-shopping-cart {
+    color: #173b56;
+    font-size: 16px;
+}
+
+header nav ul li:hover, header nav ul li a:focus {
+}
+
 /*MENU*/
 
 
