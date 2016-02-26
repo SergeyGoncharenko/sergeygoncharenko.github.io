@@ -116,6 +116,7 @@ header nav {
 }
 
     header nav ul {
+        padding-left: 125px;
     }
 
     header nav li {
@@ -124,9 +125,9 @@ header nav {
 
         header nav li a {
             text-decoration: none;
-            font: normal 14px/30px 'Lucida Sans Unicode';
+            font: normal 14px/28px 'Lucida Sans Unicode';
             color: #b1bcc0;
-            padding: 0 15px;
+            padding: 4px 15px;
         }
 
     header nav > a, header nav > p {
@@ -136,9 +137,11 @@ header nav {
         padding: 0 3px;
         color: #929b9f;
     }
-    header nav > p{
+
+    header nav > p {
         color: #8a9296;
     }
+
 .kolich_tovarov:after, .tovarov_na_summu:after {
     display: block;
     font: normal 12px/30px Arial;
@@ -161,7 +164,9 @@ header nav {
     font-size: 16px;
 }
 
-header nav ul li:hover, header nav ul li a:focus {
+header nav ul li a:hover, header nav ul li a:focus {
+    background-color: #124366;
+    border-radius: 15px;
 }
 
 /*MENU*/
