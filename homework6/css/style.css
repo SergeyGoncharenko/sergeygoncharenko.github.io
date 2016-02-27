@@ -12,6 +12,9 @@ body {
     padding: 20px 40px 0;
 }
 /*HEADER*/
+header {
+    margin-bottom: 10px;
+}
 
 .phones {
     margin: 12px 0 0;
@@ -101,6 +104,7 @@ body {
     width: 909px;
     height: 237px;
     clear: both;
+    margin-bottom: 5px;
 }
 
 .top_header {
@@ -169,8 +173,132 @@ header nav ul li a:hover, header nav ul li a:focus {
     border-radius: 15px;
 }
 
-/*MENU*/
+/*SEARCHBAR*/
+.search_bar {
+    height: 135px;
+    border: 1px dashed lightblue;
+    margin-bottom: 10px;
+}
 
+/*MAIN*/
+main {
+}
+
+aside {
+    width: 180px;
+}
+
+article {
+    border: 1px dashed lightblue;
+    width: 526px;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+}
+
+.katalog {
+    float: left;
+}
+
+.katalog_prod {
+    color: #114165;
+    font: normal 13px/26px 'Lucida Sans Unicode';
+    text-decoration: none;
+    display: block;
+    border: 1px solid #8b979c;
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px #696969;
+    margin-bottom: 14px;
+}
+
+    .katalog_prod i {
+        border-radius: 10px;
+        width: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        background-color: #114165;
+        margin: 4px;
+    }
+
+.product_name {
+    width: 150px;
+    color: #114165;
+    font: normal 13px/26px 'Lucida Sans Unicode';
+    text-decoration: none;
+    display: block;
+    border: 1px solid #8b979c;
+    border-radius: 18px;
+    margin-left: 5px;
+}
+
+    .product_name i {
+        border-radius: 10px;
+        width: 18px;
+        display: block;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 21px;
+        float: left;
+        color: #114165;
+        margin: 2px 4px;
+    }
+
+.product_block {
+    width: 157px;
+    display: block;
+    clear: both;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+    .product_block ul {
+        float: right;
+    }
+
+.product_spisok a {
+    text-decoration: none;
+    color: #465961;
+    font: normal 13px/26px 'Lucida Sans Unicode';
+    margin-left: 3px;
+}
+
+    .product_spisok a:hover {
+        font: bold italic 14px/26px Arial;
+    }
+
+.product_spisok i {
+    font-size: 6px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    line-height: 26px;
+}
+
+.brendy {
+    float: right;
+}
+
+    .brendy .product_block ul {
+        float: left;
+        margin-left: 15px;
+    }
+
+    .brendy button {
+        display: block;
+        width: 80px;
+        clear: both;
+        font: normal 11px/26px Arial;
+        color: #e5e9ea;
+        background-color: #114165;
+        margin: 90px 15px;
+        border-radius: 17px;
+    }
+
+    .brendy .product_spisok i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
 
 /*FORM*/
 
