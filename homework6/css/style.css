@@ -5,7 +5,6 @@ body {
 }
 
 .wrapper {
-    /*width: 1000px;*/
     width: 909px;
     height: 1310px;
     border: 1px solid lightblue;
@@ -174,12 +173,29 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 
 /*SEARCHBAR*/
-.search_bar {
-    height: 135px;
-    border: 1px dashed lightblue;
-    margin-bottom: 10px;
+
+.search_bar form{
+height: 135px;
+float: left;
+margin: 0 5px 10px 4px;
+border: 1px solid #696969;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #696969;
+}
+.search_po_auto{
+    width:413px;
+    
+    
 }
 
+.search_po_shina{
+    width:192px;
+    
+}
+
+.search_disk {
+    width: 267px;
+}
 
 
 /*MAIN*/
