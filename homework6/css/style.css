@@ -7,13 +7,13 @@ body {
 .wrapper {
     /*width: 1000px;*/
     width: 909px;
-    height: 1260px;
+    height: 1310px;
     border: 1px solid lightblue;
-    padding: 20px 40px 0;
+    padding: 0 40px;
 }
 /*HEADER*/
 header {
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
 }
 
 .phones {
@@ -180,20 +180,12 @@ header nav ul li a:hover, header nav ul li a:focus {
     margin-bottom: 10px;
 }
 
+
+
 /*MAIN*/
-main {
-}
 
 aside {
     width: 180px;
-}
-
-article {
-    border: 1px dashed lightblue;
-    width: 526px;
-    height: 300px;
-    float: left;
-    margin-left: 10px;
 }
 
 .katalog {
@@ -300,9 +292,146 @@ article {
         margin-right: 5px;
     }
 
-/*FORM*/
+/*MAINARTICLE_tovar*/
+
+article {
+    width: 526px;
+    height: 627px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    background: -moz-linear-gradient(270deg, #e5e7e8 0, #93a7b0 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e5e7e8), color-stop(100%, #93a7b0)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, #e5e7e8 0, #93a7b0 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, #e5e7e8 0, #93a7b0 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, #e5e7e8 0, #93a7b0 100%); /* ie10+ */
+    background: linear-gradient(180deg, #e5e7e8 0, #93a7b0 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* ie6-9 */
+}
+
+    article figure {
+        width: 138px;
+        float: left;
+        margin: 15px 15px 25px 20px;
+    }
+
+        article figure a {
+            display: block;
+            width: 138px;
+            height: 128px;
+            border: 1px solid #b0b9bc;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+    article figcaption {
+        font: normal 15px/15px 'Lucida Sans Unicode';
+        color: #206988;
+    }
+
+    article figure p {
+        font: normal 13px/13px 'Lucida Sans Unicode';
+        color: #1f2528;
+    }
+
+    article figure a:after {
+        font: bold italic 14px/20px Arial;
+        color: #114165;
+        display: block;
+        margin-top: 130px;
+    }
+
+.ultraGripExtreme a {
+    background: #ffffff url('../img/GoodyearUltraGripExtreme.jpg') center center no-repeat;
+}
+
+    .ultraGripExtreme a:after {
+        content: '90.00 грн.';
+    }
+
+.hakkapeliittaR a {
+    background: #ffffff url('../img/NokianHakkapeliittaR.jpg') center center no-repeat;
+}
+
+    .hakkapeliittaR a:after {
+        content: '115.00 грн.';
+    }
+
+.hankookK708 a {
+    background: #ffffff url('../img/NokianHakkapeliittaR.jpg') center center no-repeat;
+}
+
+    .hankookK708 a:after {
+        content: '393.00 грн.';
+    }
+
+/*LOGOBAR*/
+
+.logo_bar {
+    width: 690px;
+    clear: both;
+    margin: 0 auto;
+    padding: 35px 0 25px;
+}
+
+    .logo_bar a {
+        padding: 0 10px 0 0;
+        text-decoration: none;
+    }
+
+        .logo_bar a:last-child {
+            padding: 0;
+        }
+
+    .logo_bar img {
+        vertical-align: top;
+    }
+
+        .logo_bar img.tireFactory {
+            margin-top: -10px;
+        }
 
 /*FOOTER*/
 
 footer {
+    width: 909px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #213a4d;
+    text-align: center;
 }
+
+    footer ul {
+        margin: 0 auto;
+        padding: 13px 0 15px;
+        clear: both;
+        width: 308px;
+        height: 16px;
+    }
+
+    footer li {
+        float: left;
+        height: 13px;
+        border-right: 1px solid #bec6c9;
+    }
+
+        footer li:last-child {
+            border: none;
+        }
+
+    footer a {
+        color: #bec6c9;
+        font: normal 12px/12px Arial;
+        text-decoration: none;
+        padding: 0 12px;
+        vertical-align: top;
+    }
+
+        footer a:hover {
+            color: #52abcb;
+        }
+
+    footer p {
+        font: normal 10px/10px Arial;
+        color: #7f4740;
+    }
