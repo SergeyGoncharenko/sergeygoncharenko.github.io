@@ -7,23 +7,23 @@ body {
 .wrapper {
     width: 909px;
     height: 1310px;
-    border: 1px solid lightblue;
-    padding: 0 40px;
+    padding: 0 45px;
 }
 /*HEADER*/
 header {
-    margin: 20px 0 10px;
+    margin: 8px 0 12px;
 }
 
 .phones {
-    margin: 12px 0 0;
+    margin: 3px 0 0;
     float: left;
 }
 
     .phones a {
         text-decoration: none;
         font: normal 18px/24px Arial;
-        padding-left: 5px;
+        letter-spacing: 0.3px;
+        padding-left: 4px;
         color: #5e696d;
     }
 
@@ -33,6 +33,7 @@ header {
     float: left;
     width: 22px;
     height: 22px;
+    margin-left: 6px;
     background: url('../img/phone.png') center center no-repeat;
     color: #ffffff;
     background-color: #103d62;
@@ -41,33 +42,34 @@ header {
 
 .autorization {
     float: left;
+    height: 16px;
     background-color: #103d62;
-    padding: 5px 10px;
-    margin: 0 7px 14px;
+    padding: 3px 10px 7px 2px;
+    margin: 0 0 11px 17px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #696969;
 }
 
     .autorization input {
-        font: normal 11px/20px 'Lucida Sans Unicode';
+        font: normal 11px/12px 'Lucida Sans Unicode';
         color: #97a2a6;
         padding-left: 5px;
-        width: 112px;
+        width: 107px;
     }
 
 .autorization_button {
+    background: url('../img/autorization.png') no-repeat;
     display: block;
     float: left;
-    width: 22px;
-    height: 26px;
-    margin-right: 4px;
-    background: url('../img/autorization.png') no-repeat;
-    background-size: cover;
+    width: 14px;
+    height: 18px;
+    margin: 1px 4px 0;
 }
 
 .autorization a {
-    font: normal 11px/20px 'Lucida Sans Unicode';
+    font: normal 11px/11px 'Lucida Sans Unicode';
     text-decoration: none;
+    letter-spacing: -0.2px;
     color: #ffffff;
 }
 
@@ -79,6 +81,8 @@ header {
 .autorization .zabylparol {
     color: #bfbfbf;
     padding-left: 15px;
+    letter-spacing: 0.7px;
+    font: normal 11px/21px 'Lucida Sans Unicode';
     text-decoration: underline;
 }
 
@@ -87,13 +91,15 @@ header {
     float: right;
     border: 1px solid #696969;
     border-radius: 20px;
-    padding: 5px;
+    padding: 3px;
+    margin: 1px 6px;
     color: #696969;
 }
 
     .link_bar a {
-        padding: 0 5px;
+        padding: 0 6px;
         display: block;
+        font-size: 11px;
         float: left;
         color: grey;
     }
@@ -119,7 +125,7 @@ header nav {
 }
 
     header nav ul {
-        padding-left: 125px;
+        padding-left: 130px;
     }
 
     header nav li {
@@ -128,14 +134,32 @@ header nav {
 
         header nav li a {
             text-decoration: none;
-            font: normal 14px/28px 'Lucida Sans Unicode';
+            font: normal 14px/30px 'Lucida Sans Unicode';
             color: #b1bcc0;
             padding: 4px 15px;
         }
 
+        header nav li:nth-child(2) {
+            letter-spacing: 0.2px;
+            padding-left: 2px;
+        }
+
+        header nav li:nth-child(3) {
+            letter-spacing: -0.2px;
+        }
+
+        header nav li:nth-child(4) {
+            letter-spacing: -0.3px;
+        }
+
+        header nav li:nth-child(5) a {
+            letter-spacing: -0.3px;
+            padding: 4px 11px;
+        }
+
     header nav > a, header nav > p {
         display: block;
-        font: normal 11px/30px Arial;
+        font: normal 11px/27px Arial;
         float: right;
         padding: 0 3px;
         color: #929b9f;
@@ -143,12 +167,14 @@ header nav {
 
     header nav > p {
         color: #8a9296;
+        padding-left: 9px;
     }
 
 .kolich_tovarov:after, .tovarov_na_summu:after {
     display: block;
-    font: normal 12px/30px Arial;
+    font: normal 12px/29px Arial;
     float: right;
+    letter-spacing: 0.5px;
     color: #0d5a8f;
 }
 
@@ -159,12 +185,13 @@ header nav {
 
 .tovarov_na_summu:after {
     content: '0,00 грн.';
-    padding: 0 15px 0 10px;
+    padding: 0 10px;
 }
 
 .fa-shopping-cart {
     color: #173b56;
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 4px;
 }
 
 header nav ul li a:hover, header nav ul li a:focus {
@@ -173,39 +200,47 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 
 /*SEARCHBAR*/
-
-.search_bar form{
-height: 135px;
-float: left;
-margin: 0 5px 10px 4px;
-border: 1px solid #696969;
-    border-radius: 5px;
+.search_bar{
+    height: 135px;
+    margin-bottom: 17px;
+}
+.search_bar form {
+    height: 134px;
+    float: left;
+    border: 1px solid #696969;
+    margin: 0 9px 10px 4px;
+    border-radius: 22px;
     box-shadow: 3px 3px 10px #696969;
 }
-.search_po_auto{
-    width:413px;
-    
+
+.search_po_auto {
+    width: 413px;
     
 }
 
-.search_po_shina{
-    width:192px;
-    
+.search_po_shina {
+    width: 192px;
 }
 
-.search_disk {
-    width: 267px;
+.search_bar .search_disk {
+    width: 266px;
+    margin: 0 0 0 2px;
+    border-radius: 15px;
 }
 
 
 /*MAIN*/
 
+main{
+    clear: both;
+}
 aside {
     width: 180px;
 }
 
 .katalog {
     float: left;
+    margin-top: 2px;
 }
 
 .katalog_prod {
@@ -213,6 +248,7 @@ aside {
     font: normal 13px/26px 'Lucida Sans Unicode';
     text-decoration: none;
     display: block;
+    letter-spacing: -0.1px;
     border: 1px solid #8b979c;
     border-radius: 18px;
     box-shadow: 3px 3px 10px #696969;
@@ -237,30 +273,31 @@ aside {
     display: block;
     border: 1px solid #8b979c;
     border-radius: 18px;
-    margin-left: 5px;
+    margin-left: 1px;
+    letter-spacing: 0.7px;
 }
 
     .product_name i {
-        border-radius: 10px;
-        width: 18px;
-        display: block;
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 21px;
-        float: left;
-        color: #114165;
-        margin: 2px 4px;
+    border-radius: 10px;
+    width: 18px;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 21px;
+    float: left;
+    color: #114165;
+    margin: 3px 7px 0 3px;
     }
 
 .product_block {
-    width: 157px;
+    width: 152px;
     display: block;
     clear: both;
-    margin-bottom: 5px;
     margin-bottom: 5px;
 }
 
     .product_block ul {
+        margin-bottom: -5px;
         float: right;
     }
 
@@ -285,11 +322,20 @@ aside {
 
 .brendy {
     float: right;
+    width: 182px;
 }
-
+.brendy .product_block {
+    width: 152px;
+    margin-bottom: 10px;
+}
+.brendy .product_name {
+    width: 138px;
+    margin-left: 12px;
+}
     .brendy .product_block ul {
         float: left;
-        margin-left: 15px;
+        margin-left: 25px;
+        margin-bottom: 6px;
     }
 
     .brendy button {
@@ -299,13 +345,16 @@ aside {
         font: normal 11px/26px Arial;
         color: #e5e9ea;
         background-color: #114165;
-        margin: 90px 15px;
+        margin: 90px 22px;
         border-radius: 17px;
     }
 
     .brendy .product_spisok i {
         font-size: 12px;
         margin-right: 5px;
+    }
+    .brendy .product_spisok_diski {
+        margin-top: 6px;
     }
 
 /*MAINARTICLE_tovar*/
@@ -315,6 +364,7 @@ article {
     height: 627px;
     text-align: center;
     float: left;
+    border-radius: 5px;
     margin-left: 10px;
     background: -moz-linear-gradient(270deg, #e5e7e8 0, #93a7b0 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e5e7e8), color-stop(100%, #93a7b0)); /* safari4+,chrome */
@@ -328,7 +378,7 @@ article {
     article figure {
         width: 138px;
         float: left;
-        margin: 15px 15px 25px 20px;
+        margin: 14px 6px 30px 23px;
     }
 
         article figure a {
@@ -336,7 +386,7 @@ article {
             width: 138px;
             height: 128px;
             border: 1px solid #b0b9bc;
-            border-radius: 5px;
+            border-radius: 10px;
             text-decoration: none;
         }
 
@@ -387,7 +437,7 @@ article {
     width: 690px;
     clear: both;
     margin: 0 auto;
-    padding: 35px 0 25px;
+    padding: 41px 0 25px;
 }
 
     .logo_bar a {
@@ -404,7 +454,7 @@ article {
     }
 
         .logo_bar img.tireFactory {
-            margin-top: -10px;
+            margin-top: -4px;
         }
 
 /*FOOTER*/
