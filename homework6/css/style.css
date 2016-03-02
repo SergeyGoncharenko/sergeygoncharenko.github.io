@@ -7,6 +7,7 @@ body {
 .wrapper {
     width: 909px;
     height: 1310px;
+    margin: 0 auto;
     padding: 0 45px;
 }
 /*HEADER*/
@@ -200,23 +201,57 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 
 /*SEARCHBAR*/
-.search_bar{
+
+.search_bar {
     height: 135px;
     margin-bottom: 17px;
 }
-.search_bar form {
-    height: 134px;
-    float: left;
-    border: 1px solid #696969;
-    margin: 0 9px 10px 4px;
-    border-radius: 22px;
-    box-shadow: 3px 3px 10px #696969;
-}
+
+    .search_bar h5 {
+        margin: 0 15px 5px;
+        font: 900 10px/12px Arial;
+        color: #154468;
+    }
+
+    .search_bar form {
+        height: 134px;
+        float: left;
+        border: 1px solid #696969;
+        margin: 0 9px 10px 4px;
+        border-radius: 22px;
+        box-shadow: 3px 3px 10px #696969;
+    }
+
+    .search_bar label {
+        width: 70px;
+        margin-top: 5px;
+        font: normal 10px/10px Arial;
+        color: #000000;
+        float: left;
+    }
+
+        .search_bar label span {
+            font: normal 8px/10px Arial;
+            color: #77858b;
+        }
 
 .search_po_auto {
     width: 413px;
-    
 }
+
+.search_po_auto_diski {
+    float: left;
+}
+
+.search_bar .search_po_auto_shini {
+    float: right;
+    margin-right: 15px;
+}
+
+    .search_po_auto_shini h5 {
+        float: right;
+        margin: 0 25px 5px;
+    }
 
 .search_po_shina {
     width: 192px;
@@ -228,12 +263,100 @@ header nav ul li a:hover, header nav ul li a:focus {
     border-radius: 15px;
 }
 
+.search_bar div {
+    margin: -10px 5px 5px;
+    width: 180px;
+    position: relative;
+}
+
+.search_po_auto a {
+    float: right;
+    margin: -8px 30px 0;
+    font: italic 14px/16px Arial;
+    color: #154467;
+    text-decoration: none;
+    border-bottom: 1px solid #a6b1bc;
+}
+
+.search_bar h3 {
+    text-align: center;
+    color: #154467;
+    font: 900 12px/14px Arial;
+}
+
+.custom-select .custom_model {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 8px;
+}
+.custom-select.god_vipuska {
+        width: 125px;
+        margin-top: 0;
+    }
+.custom-select.god_vipuska label{
+    margin-top:0;
+}
+.custom-select.god_vipuska select{
+    width: 45px;
+}
+
+    .custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+    .custom-select select {
+        display: inline-block;
+        border:none;
+        font: normal 10px/10px Arial;
+        width: 90px;
+        height: 15px;
+        border-left: 1px solid #949494;
+        border-top: 1px solid #949494;
+        padding: 3px;
+        margin: 0 5px;
+        outline:none; /* remove focus ring from Webkit */
+        background: #f8f8f8;
+        
+        -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+   }
+
+    /* for Webkit's CSS-only solution */
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+        .custom-select select {
+            padding-right:30px;    
+        }
+    }
+    
+    /* Select arrow styling */
+    .custom-select:after {
+        content: "▼";
+        position: absolute;
+        height: 15px;
+        border: 1px solid #d0d0d0;
+        border-top: 1px solid #949494;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 1px;
+        background-color:#ffffff;
+        color: #000000;
+        
+        pointer-events:none;
+    }
+    
+    .no-pointer-events .custom-select:after {
+        content: none;
+    }
 
 /*MAIN*/
 
-main{
+main {
     clear: both;
 }
+
 aside {
     width: 180px;
 }
@@ -278,15 +401,15 @@ aside {
 }
 
     .product_name i {
-    border-radius: 10px;
-    width: 18px;
-    display: block;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 21px;
-    float: left;
-    color: #114165;
-    margin: 3px 7px 0 3px;
+        border-radius: 10px;
+        width: 18px;
+        display: block;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 21px;
+        float: left;
+        color: #114165;
+        margin: 3px 7px 0 3px;
     }
 
 .product_block {
@@ -324,14 +447,17 @@ aside {
     float: right;
     width: 182px;
 }
-.brendy .product_block {
-    width: 152px;
-    margin-bottom: 10px;
-}
-.brendy .product_name {
-    width: 138px;
-    margin-left: 12px;
-}
+
+    .brendy .product_block {
+        width: 152px;
+        margin-bottom: 10px;
+    }
+
+    .brendy .product_name {
+        width: 138px;
+        margin-left: 12px;
+    }
+
     .brendy .product_block ul {
         float: left;
         margin-left: 25px;
@@ -342,17 +468,18 @@ aside {
         display: block;
         width: 80px;
         clear: both;
-        font: normal 11px/26px Arial;
+        font: normal 11px/21px Arial;
         color: #e5e9ea;
         background-color: #114165;
-        margin: 90px 22px;
-        border-radius: 17px;
+        margin: 94px 22px;
+        border-radius: 15px;
     }
 
     .brendy .product_spisok i {
         font-size: 12px;
         margin-right: 5px;
     }
+
     .brendy .product_spisok_diski {
         margin-top: 6px;
     }
