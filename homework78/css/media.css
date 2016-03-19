@@ -1,2 +1,336 @@
-﻿body {
+﻿@media only screen and (max-width: 319px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        display: none;
+    }
 }
+
+/* ----------- < 479px ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+    .news__container {
+        display: none;
+    }
+
+    .footer__menu {
+        display: none;
+    }
+}
+
+/* ----------- 480-767px ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .wrapper {
+        max-width: 767px;
+        width: 100%;
+    }
+
+    .container {
+        min-width: 480px;
+        width: 100%;
+    }
+
+
+    .menu {
+        visibility: visible;
+        left: 33%;
+    }
+
+    .menu__about,
+    .menu__blog,
+    .menu__products,
+    .menu__lorem,
+    .menu__dolor {
+        display: block;
+    }
+
+    .iphone_photo {
+        display: block;
+        float: right;
+        background: url('../img/iPhone-4.png') center center no-repeat;
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider__bg {
+        width: 100%;
+        height: 248px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .slider__wrapper {
+        max-width: 480px;
+        margin: 90px auto 0;
+        height: 285px;
+    }
+
+    .controls {
+        width: 100%;
+        height: 35px;
+    }
+
+    .slider__wrapper .active {
+        left: 190px;
+    }
+
+    .slider__wrapper .controls label {
+        top: 96px;
+        left: 430px;
+    }
+
+        .slider__wrapper .controls label:before {
+            left: -405px;
+        }
+
+    .slides h3 {
+        padding: 112px 0 0 60px;
+    }
+
+    .slides h5 {
+        padding: 0 0 0 60px;
+    }
+
+    .slide1 {
+        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .slide2 {
+        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .about__block {
+        margin: 0 auto 80px;
+    }
+
+    .article__block {
+        margin: 0 auto 100px;
+    }
+
+    .recent_upd {
+        border-bottom: 1px solid #e6e6e6;
+        width: 290px;
+        height: 280px;
+        margin: 0 auto;
+        padding: 0 0 100px 0;
+    }
+
+        .recent_upd a {
+            margin: 0;
+            float: right;
+        }
+
+    .block__post {
+        margin: 15px 0;
+        position: relative;
+        /*padding-left: 70px;*/
+    }
+
+
+    .brands {
+        height: 235px;
+        padding: 0;
+        border-bottom: 2px solid #d8d8d8;
+    }
+
+    .brands__block {
+        background: url('../img/logos_480.png') center center no-repeat;
+        background-size: 80%;
+        width: 70%;
+        height: 235px;
+        padding: 0;
+    }
+
+    .news__container {
+        display: block;
+        visibility: visible;
+        padding: 30px 0;
+    }
+
+    .news__block {
+        padding: 20px 0;
+    }
+
+        .news__block h4 {
+            font: normal 24px/40px "League Gothic";
+        }
+
+        .news__block p {
+            font: normal 16px/24px "Open Sans";
+            display: block;
+            width: 438px;
+        }
+
+    .footer__menu {
+        display: block;
+        width: 433px;
+        height: 100px;
+        margin: 0 auto;
+    }
+}
+
+/* ----------- 768-959px ------------ */
+@media only screen and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        max-width: 959px;
+        width: 100%;
+        height: 798px;
+    }
+
+    .menu {
+        visibility: visible;
+        left: 33%;
+    }
+
+    .menu__about,
+    .menu__blog,
+    .menu__products,
+    .menu__lorem,
+    .menu__dolor {
+        display: block;
+    }
+
+    .iphone_photo {
+        display: block;
+        float: right;
+        background: url('../img/iPhone-4.png') center center no-repeat;
+        width: 200px;
+        height: 200px;
+    }
+
+    /*.slider__bg {
+        height: 400px;
+    }*/
+
+    .slider__wrapper {
+        max-width: 480px;
+        margin: 90px auto 0;
+        height: 285px;
+    }
+
+    .controls {
+        width: 100%;
+        height: 35px;
+    }
+
+    .slider__wrapper .active {
+        left: 190px;
+    }
+
+    .slider__wrapper .controls label {
+        top: 96px;
+        left: 430px;
+    }
+
+        .slider__wrapper .controls label:before {
+            left: -405px;
+        }
+
+    .slides h3 {
+        padding: 112px 0 0 60px;
+    }
+
+    .slides h5 {
+        padding: 0 0 0 60px;
+    }
+
+    .slide1 {
+        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .slide2 {
+        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .about__block {
+        margin: 0 auto 80px;
+    }
+
+    .article__block {
+        margin: 0 auto 100px;
+    }
+
+    .recent_upd {
+        border-bottom: 1px solid #e6e6e6;
+        width: 338px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .block__post {
+        margin: 15px 0;
+        position: relative;
+    }
+
+
+    .brands {
+        height: 235px;
+        padding: 0;
+        border-bottom: 2px solid #d8d8d8;
+    }
+
+    .brands__block {
+        background: url('../img/logos_480.png') center center no-repeat;
+        background-size: 80%;
+        width: 70%;
+        height: 235px;
+        padding: 0;
+    }
+
+    .news__container {
+        display: block;
+        visibility: visible;
+        padding: 30px 0;
+    }
+
+    .news__block {
+        padding: 20px 0;
+    }
+
+        .news__block h4 {
+            font: normal 24px/40px "League Gothic";
+        }
+
+        .news__block p {
+            font: normal 16px/24px "Open Sans";
+            display: block;
+            width: 438px;
+        }
+
+    .footer__menu {
+        display: block;
+        width: 433px;
+        height: 100px;
+        margin: 0 auto;
+    }
+}
+
+/* ----------- 960px < ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}*/
