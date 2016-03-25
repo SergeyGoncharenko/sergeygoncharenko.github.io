@@ -15,8 +15,16 @@
         display: none;
     }
 
+    footer {
+        height: 160px;
+    }
+
     .footer__menu {
         display: none;
+    }
+
+    footer p {
+        padding-top: 40px;
     }
 }
 
@@ -76,6 +84,7 @@
     }
 
     .slider__wrapper .active {
+        top: 270px;
         left: 190px;
     }
 
@@ -130,7 +139,6 @@
     .block__post {
         margin: 15px 0;
         position: relative;
-        /*padding-left: 70px;*/
     }
 
 
@@ -177,7 +185,8 @@
 }
 
 /* ----------- 768-959px ------------ */
-@media only screen and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+@media only screen and (min-width: 768px) and (max-width: 959px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
     .container {
         width: 768px;
@@ -190,9 +199,41 @@
         height: 798px;
     }
 
+    header {
+        height: 728px;
+        padding-top: 70px;
+    }
+
+    .logo {
+        margin: 0 0 0 23px;
+    }
+
     .menu {
         visibility: visible;
-        left: 33%;
+        left: 15px;
+        width: 770px;
+        height: 50px;
+        border: none;
+        text-align: left;
+        font-size: 24px;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+
+    .menu__item {
+        border-top: none;
+        border-bottom: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+        .menu__item.active {
+            border-bottom: none;
+            background-color: transparent;
+        }
+
+    .menu__link {
+        font: normal 24px/40px "League Gothic";
     }
 
     .menu__about,
@@ -211,14 +252,22 @@
         height: 200px;
     }
 
-    /*.slider__bg {
+    .slider__bg {
         height: 400px;
-    }*/
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin: 0;
+    }
+
 
     .slider__wrapper {
-        max-width: 480px;
-        margin: 90px auto 0;
+        max-width: 718px;
+        margin: 130px auto 0;
         height: 285px;
+    }
+
+    .slider {
+        height: 400px;
     }
 
     .controls {
@@ -227,79 +276,111 @@
     }
 
     .slider__wrapper .active {
-        left: 190px;
+        top: 450px;
+        left: 490px;
     }
 
     .slider__wrapper .controls label {
-        top: 96px;
-        left: 430px;
+        top: 170px;
+        left: 700px;
     }
 
         .slider__wrapper .controls label:before {
-            left: -405px;
+            left: -705px;
         }
 
     .slides h3 {
-        padding: 112px 0 0 60px;
+        font: normal 48px/50px "League Gothic";
+        padding: 105px 0 0 60px;
     }
 
     .slides h5 {
+        font: normal 24px/32px "League Gothic";
+        padding: 0 0 0 60px;
+    }
+
+    .slides p {
+        display: block;
+        font: normal 16px/24px "Open Sans";
+        color: #ffffff;
+        width: 275px;
         padding: 0 0 0 60px;
     }
 
     .slide1 {
-        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background: url('../img/iPhone-4_768.png') 400px 0 no-repeat;
         background-size: contain;
     }
 
     .slide2 {
-        background: url('../img/iPhone-4.png') 245px 0 no-repeat;
+        background: url('../img/iPhone-4_768.png') 400px 0 no-repeat;
         background-size: contain;
     }
 
-    .about__block {
-        margin: 0 auto 80px;
+    .about {
+        padding: 60px 0;
+        height: 220px;
     }
 
+    .about__block {
+        float: left;
+        width: 150px;
+        margin: 0;
+        padding: 0 0 0 85px;
+    }
+
+        .about__block:before {
+            top: 5px;
+            left: 40px;
+        }
+
+
     .article__block {
-        margin: 0 auto 100px;
+        margin: 0 20px 0 45px;
+        padding-top: 5px;
+        float: left;
     }
 
     .recent_upd {
         border-bottom: 1px solid #e6e6e6;
-        width: 338px;
+        width: 290px;
         height: 280px;
-        margin: 0 auto;
+        margin: 0;
+        float: left;
     }
 
-    .block__post {
-        margin: 15px 0;
-        position: relative;
+    .name__block:before {
+        top: 0;
+        left: -5px;
     }
-
 
     .brands {
-        height: 235px;
+        height: 120px;
         padding: 0;
+        clear: both;
         border-bottom: 2px solid #d8d8d8;
     }
 
     .brands__block {
-        background: url('../img/logos_480.png') center center no-repeat;
-        background-size: 80%;
-        width: 70%;
-        height: 235px;
+        background: url('../img/logos_768.png') center center no-repeat;
+        background-size: 100%;
+        width: 95%;
+        height: 120px;
         padding: 0;
     }
 
     .news__container {
         display: block;
+        height: 400px;
         visibility: visible;
         padding: 30px 0;
+        clear: both;
     }
 
     .news__block {
-        padding: 20px 0;
+        width: 202px;
+        float: left;
+        margin: 80px 27px;
     }
 
         .news__block h4 {
@@ -309,7 +390,9 @@
         .news__block p {
             font: normal 16px/24px "Open Sans";
             display: block;
-            width: 438px;
+            width: 202px;
+            height: 170px;
+            overflow: hidden;
         }
 
     .footer__menu {
@@ -323,7 +406,237 @@
 /* ----------- 960px < ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 798px;
+    }
+
+    header {
+        height: 728px;
+        padding-top: 70px;
+    }
+
+    .logo {
+        margin: 0 0 0 23px;
+        float: left;
+    }
+
+    .menu {
+        visibility: visible;
+        position: relative;
+        margin: 0;
+        width: 770px;
+        height: 50px;
+        border: none;
+        text-align: left;
+        font-size: 24px;
+        background-color: transparent;
+        box-sizing: border-box;
+    }
+
+    .menu__item {
+        border-top: none;
+        border-bottom: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+        .menu__item.active {
+            border-bottom: none;
+            background-color: transparent;
+        }
+
+    .menu__link {
+        font: normal 24px/40px "League Gothic";
+    }
+
+    .menu__about,
+    .menu__blog,
+    .menu__products,
+    .menu__lorem,
+    .menu__dolor {
+        display: block;
+    }
+
+    .iphone_photo {
+        display: block;
+        float: right;
+        background: url('../img/iPhone-4.png') center center no-repeat;
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider__bg {
+        height: 492px;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .slider__wrapper {
+        max-width: 718px;
+        margin: 130px auto 0;
+        height: 285px;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .controls {
+        width: 100%;
+        height: 35px;
+    }
+
+    .slider__wrapper .active {
+        top: 450px;
+        left: 490px;
+    }
+
+    .slider__wrapper .controls label {
+        top: 170px;
+        left: 700px;
+    }
+
+        .slider__wrapper .controls label:before {
+            left: -705px;
+        }
+
+    .slides h3 {
+        font: normal 48px/50px "League Gothic";
+        padding: 105px 0 0 60px;
+    }
+
+    .slides h5 {
+        font: normal 24px/32px "League Gothic";
+        padding: 0 0 0 60px;
+    }
+
+    .slides p {
+        display: block;
+        font: normal 16px/24px "Open Sans";
+        color: #ffffff;
+        width: 275px;
+        padding: 0 0 0 60px;
+    }
+
+    .slide1 {
+        background: url('../img/iPhone-4_768.png') 400px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .slide2 {
+        background: url('../img/iPhone-4_768.png') 400px 0 no-repeat;
+        background-size: contain;
+    }
+
+    .about {
+        padding: 60px 0;
+        height: 220px;
+    }
+
+    .about__block {
+        float: left;
+        width: 150px;
+        margin: 30px 40px 0 110px;
+    }
+
+        .about__block:before {
+            top: 5px;
+            left: -40px;
+        }
+
+    .cloud:before {
+        background: url('../img/cloud.png') center center no-repeat;
+    }
+
+    .music:before {
+        background: url('../img/music.png') center center no-repeat;
+    }
+
+        .about__block p {
+            width: 135px;
+        }
+
+
+    .article__block {
+        margin: 0 20px 0 45px;
+        padding-top: 5px;
+        float: left;
+    }
+
+    .recent_upd {
+            margin: 0 50px;
+    float: right;
+    }
+
+    .name__block:before {
+        top: 0;
+        left: -5px;
+    }
+
+    .brands {
+        height: 120px;
+        padding: 0;
+        clear: both;
+        border-bottom: 2px solid #d8d8d8;
+    }
+
+    .brands__block {
+        background: url('../img/logos_768.png') center center no-repeat;
+        background-size: 100%;
+        width: 95%;
+        height: 120px;
+        padding: 0;
+    }
+
+    .news__container {
+        display: block;
+        height: 400px;
+        visibility: visible;
+        padding: 30px 0;
+        clear: both;
+    }
+
+    .news__block {
+        width: 25%;
+        float: left;
+        margin: 75px 40px;
+    }
+
+        .news__block h4 {
+            font: normal 24px/40px "League Gothic";
+        }
+
+        .news__block p {
+            font: normal 16px/24px "Open Sans";
+            display: block;
+            width: 202px;
+            height: 170px;
+            overflow: hidden;
+        }
+
+    .footer__menu {
+        display: block;
+        float: left;
+    }
+    
+    footer {
+        height: 100px;
+    }
+
+    footer p {
+       float: right;
+       padding: 40px;
+    }
 }
 
 /* Portrait */
